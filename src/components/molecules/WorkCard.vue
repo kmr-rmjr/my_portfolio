@@ -1,13 +1,13 @@
 <template>
-  <v-col cols="11" lg="4">
-    <v-card flat color="rgba(0, 0, 0, 0)">
+  <v-col cols="11" sm="11" lg="4">
+    <v-card flat color="rgba(0, 0, 0, 0)" class="mb-16">
       <v-img
+        class="mx-auto mb-4"
         contain
-        height="280"
-        max-width="400"
+        max-width="500"
         :src="require('@/assets/img/' + imgFile)"
       ></v-img>
-      <h5 class="text-center text-subtitle-1 font-weight-bold mb-2">{{productName}}</h5>
+      <h5 class="text-center text-h6 text-lg-subtitle-1 font-weight-bold mb-2">{{productName}}</h5>
       <v-row justify="center" class="mb-9">
         <v-btn v-bind="btn" color="#435466" :href="pageLink">Link</v-btn>
         <v-btn v-bind="btn" :href="githubLink">GitHub</v-btn>

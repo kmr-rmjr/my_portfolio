@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="6" lg="2" class="mb-6">
+  <v-col cols="6" sm="4" lg="2" class="mb-6">
     <v-card flat color="rgba(0,0,0,0)">
       <v-img
       contain

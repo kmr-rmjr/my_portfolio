@@ -28,7 +28,7 @@
       img-file="works/img-og_project_web.png"
       productName="2020年度 尾形プロジェクト ウェブサイト"
       range="デザイン,フロントエンド, バックエンド"
-      languages="Vue.js, Vuetify, Firebase"
+      languages="Vue.js, Vuetify"
       page-link="http://www.ne.senshu-u.ac.jp/~proj2020-7/"
       github-link="https://github.com/kmr-rmjr/og_project_web"
     >専修大学2020年度プロジェクトにて企画された、尾形プロジェクトのWebサイトです。<br>

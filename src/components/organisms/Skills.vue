@@ -17,7 +17,7 @@ export default {
     return {
       Languages: [
         {name: "HTML5", img: 'html.svg'},
-        {name: "CSS", img: 'css.svg'},
+        {name: "CSS/Sass", img: 'css.svg'},
         {name: "JavaScript ES6", img: 'javascript.svg'},
         {name: "Vue.js", img: 'vuejs.svg'},
         {name: "Django", img: 'django.svg'},
