@@ -1,13 +1,9 @@
 <template>
-  <v-col cols="8" lg="2">
-    <v-card v-bind="circle"></v-card>
-    <v-card v-bind="circle"></v-card>
-    <p class="text-center my-2">Pleace Scroll Down</p>
-    <v-card v-bind="circle"></v-card>
-    <v-card v-bind="circle"></v-card>
+  <v-col cols="5" lg="2">
+    <v-img :src="require('@/assets/img/img-scroll-parts.png')"></v-img>
     <v-img
       :src="require('@/assets/img/icon-scroll-button.svg')"
-      width="40%"
+      width="60%"
       class="mx-auto mt-2 pointer"
       @click="goto(link)"
     ></v-img>
@@ -20,16 +16,6 @@ export default {
     link: {
       type: String,
       required: true,
-    }
-  },
-  data() {
-    return {
-      circle: {
-        width: 15,
-        height: 15,
-        color: '#333',
-        class: ['mx-auto', 'rounded-circle', 'my-3']
-      }
     }
   },
   methods: {

@@ -1,12 +1,13 @@
 <template>
-  <v-app-bar>
-    <v-app-bar-title>{{title}}</v-app-bar-title>
-    <v-spacer></v-spacer>
-    <v-tool-box>
-      <v-btn v-for="menu in navMenues" :key="menu.title"></v-btn>
-      <v-btn @click="goto(menu.link)">{{menu.title}}</v-btn>
-      <v-btn>Works</v-btn>
-    </v-tool-box>
+  <v-app-bar dark app>
+    <template v-if="$vuetify.breakpoint.xs"></template>
+    <template v-else>
+      <v-toolbar-title>{{title}}</v-toolbar-title>
+      <v-spacer></v-spacer>
+    </template>
+    <v-toolbar-items class="mx-auto">
+      <v-btn text v-for="menu in navMenue" :key="menu.title" @click="goto(menu.link)">{{menu.title}}</v-btn>
+    </v-toolbar-items>
   </v-app-bar>
 </template>
 
@@ -17,7 +18,7 @@ export default {
       Type: String,
       Required: true
     },
-    navMenus: {
+    navMenue: {
       Type: Array,
       Requred: false,
     }
@@ -29,7 +30,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

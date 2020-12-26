@@ -1,12 +1,17 @@
 <template>
   <v-col cols="11" lg="4">
-    <v-card flat>
+    <v-card flat color="rgba(0, 0, 0, 0)">
       <v-img
-      contain
-      height="280"
-      max-width="400"
-      :src="require('@/assets/img/' + imgFile)"></v-img>
-      <h5 class="text-center">{{productName}}</h5>
+        contain
+        height="280"
+        max-width="400"
+        :src="require('@/assets/img/' + imgFile)"
+      ></v-img>
+      <h5 class="text-center text-subtitle-1 font-weight-bold mb-2">{{productName}}</h5>
+      <v-row justify="center" class="mb-9">
+        <v-btn v-bind="btn" color="#435466" :href="pageLink">Link</v-btn>
+        <v-btn v-bind="btn" :href="githubLink">GitHub</v-btn>
+      </v-row>
       <p :class="subtitile">製作範囲</p>
       <p>{{range}}</p>
       <p :class="subtitile">使用言語</p>
@@ -36,15 +41,29 @@ export default {
       type: String,
       required: true,
     },
+    pageLink: {
+      type: String,
+      required: true,
+    },
+    githubLink: {
+      type: String,
+      required: true,
+    },
   },
   data() {
     return {
       subtitile: ["font-weight-bold", "mb-0"],
+      btn: {
+        rounded: true,
+        dark: true,
+        target: '_blank',
+        class: ['mx-2', "text-capitalize"],
+      }
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <v-footer>
-    <p>{{text}}</p>
+  <v-footer dark height="70px">
+    <p class="ma-auto">{{text}}</p>
   </v-footer>
 </template>
 
@@ -10,11 +10,10 @@ export default {
     text: {
       type: String,
       required: true,
-    }
+    },
   }
 }
 </script>
-
 <style>
 
 </style>
