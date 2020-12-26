@@ -7,7 +7,7 @@
     <main-page></main-page>
     <custom-footer
       color="black"
-      text="Kaito Kimura All Rights reserved."
+      text="©2020 Kaito Kimura"
     ></custom-footer>
   </v-app>
 </template>
