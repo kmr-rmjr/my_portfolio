@@ -1,7 +1,8 @@
 <template>
   <v-col cols="11" sm="9" lg="6">
     <v-img
-      :src="require('@/assets/img/' + imgFile)"
+      :src="require(`@/assets/img/${imgFile}`)"
+      :lazy-src="require(`@/assets/img/${imgFile}`)"
       width="200px"
       class="mx-auto rounded-circle"
     >

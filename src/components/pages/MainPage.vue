@@ -2,12 +2,17 @@
   <v-main>
     <section class="mv bg-light-gray">
       <v-container class="height-100vh">
-        <h1 class="text-center text-h2 mb-4 mt-40vh font-weight-light">Kaito Kimura</h1>
-        <v-row justify="center">
-          <scroll-button
-            link="#about"
-            class="mx-auto"
-          ></scroll-button>
+        <v-row justify="center" align="center" class="height-100per">
+          <v-col>
+            <h1 class="text-center text-h3 text-sm-h2 mb-4 font-weight-light">Kaito Kimura</h1>
+            <v-row justify="center">
+              <scroll-button
+                link="#about"
+                class="mx-auto"
+              ></scroll-button>
+            </v-row>
+
+          </v-col>
         </v-row>
       </v-container>
     </section>
@@ -56,19 +61,22 @@ export default {
 </script>
 
 
-<style scoped>
-  .height-100vh {
-    height: 100vh;
-  }
-  .mt-40vh {
-    margin-top: 30vh;
-  }
-
-  .bg-light-gray {
-    background-color: #f3f3f3;
+<style lang="scss" scoped>
+  .height{
+    &-100per {
+      height: 100%;
+      }
+    &-100vh {
+      height: calc(100vh - 64px);
+      }
   }
 
-  .bg-gray {
-    background-color: #e2e2e2;
+  .bg {
+    &-light-gray {
+      background-color: #f3f3f3;
+      }
+    &-gray {
+      background-color: #e2e2e2;
+    }
   }
 </style>

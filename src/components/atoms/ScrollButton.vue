@@ -7,6 +7,7 @@
     <v-card v-bind="circle"></v-card>
     <v-img
       :src="require('@/assets/img/icon-scroll-button.svg')"
+      :lazy-src="require('@/assets/img/icon-scroll-button.svg')"
       :width="buttonWidth"
       class="mx-auto mt-2 pointer"
       @click="goto(link)"
