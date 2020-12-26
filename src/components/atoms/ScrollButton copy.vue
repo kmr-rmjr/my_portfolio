@@ -7,7 +7,7 @@
     <v-card v-bind="circle"></v-card>
     <v-img
       :src="require('@/assets/img/icon-scroll-button.svg')"
-      :width="buttonWidth"
+      width="40%"
       class="mx-auto mt-2 pointer"
       @click="goto(link)"
     ></v-img>
@@ -29,19 +29,6 @@ export default {
         height: 15,
         color: '#333',
         class: ['mx-auto', 'rounded-circle', 'my-3']
-      }
-    }
-  },
-  computed: {
-    buttonWidth() {
-      if(this.$vuetify.breakpoint.xs) {
-        return '30%';
-      }
-      if(this.$vuetify.breakpoint.sm | this.$vuetify.breakpoint.md) {
-        return '15%';
-      }
-      else {
-        return "40%"
       }
     }
   },
