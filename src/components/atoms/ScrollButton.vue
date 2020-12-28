@@ -2,7 +2,7 @@
   <v-col cols="8" lg="2">
     <v-card v-bind="circle"></v-card>
     <v-card v-bind="circle"></v-card>
-    <p class="text-center my-2">Pleace Scroll Down</p>
+    <p class="text-center my-2">Please Scroll Down</p>
     <v-card v-bind="circle"></v-card>
     <v-card v-bind="circle"></v-card>
     <v-img
@@ -36,13 +36,10 @@ export default {
   computed: {
     buttonWidth() {
       if(this.$vuetify.breakpoint.xs) {
-        return '30%';
-      }
-      if(this.$vuetify.breakpoint.sm | this.$vuetify.breakpoint.md) {
-        return '15%';
+        return '60px';
       }
       else {
-        return "40%"
+        return "70px"
       }
     }
   },
