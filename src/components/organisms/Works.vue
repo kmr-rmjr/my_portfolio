@@ -4,7 +4,7 @@
       img-file="works/img-onomatalk.png"
       productName="オノマトーク"
       range="デザイン,フロントエンド, バックエンド"
-      languages="Vue.js, Vuetify, Django Rest Framework, Firebase"
+      languages="Vue.js, Vuetify, Django Rest Framework, Google Cloud Translation API, Firebase"
       page-link="https://onomatalk.web.app/"
       github-link="https://github.com/kmr-rmjr/onomatalk_web"
     >専修大学3年次のカリキュラムであるプロジェクトでの成果物です。<br>
@@ -33,7 +33,7 @@
       page-link="http://www.ne.senshu-u.ac.jp/~proj2020-7/"
       github-link="https://github.com/kmr-rmjr/og_project_web"
     >専修大学2020年度プロジェクトにて企画された、尾形プロジェクトのWebサイトです。<br>
-    デザインからコーディング等、デザイン、フロントエンド等、このアプリケーション開発の全行程を担当しました。<br>
+    デザイン、フロントエンド等、このWebサイト作成における全行程を担当しました。<br>
     Vue CLIとVuetifyを使用してフロントエンドを実装し、大学のサーバーにアップロードしました。<br>
     余談ですが、私は本プロジェクトで開発チームに所属し、プロジェクトの代表を務めさせていただきました。</work-card>
 

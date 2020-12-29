@@ -24,3 +24,7 @@ pnpm-debug.log*
 
 # Image files
 icon-profile.png
+
+# Firebase
+.firebaserc
+firebase.json
