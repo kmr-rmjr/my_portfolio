@@ -1,5 +1,6 @@
 # Kaito Kimura's Portfolio
 https://kaito-kimura.web.app/
+![](./src/assets/img/sample-app-img.png)
 
 # Stack
 - Vue.js
