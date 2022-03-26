@@ -10,6 +10,7 @@
       class="ma-auto"
       ></v-img>
       <p class="text-center mt-2">{{language}}</p>
+      <p class="text-center mt-n3"><v-icon small v-for="n in 5" :key="n">{{stars(star, n)}}</v-icon></p>
     </v-card>
   </v-col>
 </template>
@@ -24,11 +25,21 @@ export default {
     language: {
       type: String,
       required: true,
+    },
+    star: {
+      type: Number,
+      required: true,
+    }
+  },
+  methods: {
+    stars(star, n) {
+      if(n <= star) {
+        return 'fas fa-star'
+      }
+      else {
+        return 'far fa-star'
+      }
     }
   }
 }
 </script>
-
-<style>
-
-</style>

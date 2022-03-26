@@ -2,12 +2,13 @@
   <v-col cols="8" lg="2">
     <v-card v-bind="circle"></v-card>
     <v-card v-bind="circle"></v-card>
-    <p class="text-center my-2">Pleace Scroll Down</p>
+    <p class="text-center my-2">Please Scroll Down</p>
     <v-card v-bind="circle"></v-card>
     <v-card v-bind="circle"></v-card>
     <v-img
       :src="require('@/assets/img/icon-scroll-button.svg')"
-      width="40%"
+      :lazy-src="require('@/assets/img/icon-scroll-button.svg')"
+      :width="buttonWidth"
       class="mx-auto mt-2 pointer"
       @click="goto(link)"
     ></v-img>
@@ -29,6 +30,16 @@ export default {
         height: 15,
         color: '#333',
         class: ['mx-auto', 'rounded-circle', 'my-3']
+      }
+    }
+  },
+  computed: {
+    buttonWidth() {
+      if(this.$vuetify.breakpoint.xs) {
+        return '60px';
+      }
+      else {
+        return "70px"
       }
     }
   },

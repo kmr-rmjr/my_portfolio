@@ -3,6 +3,7 @@
     <language-card v-for="language in Languages" :key="language.name"
       :img-file="`languages/logo-${language.img}`"
       :language="language.name"
+      :star="language.star"
     ></language-card>
   </v-row>
 </template>
@@ -16,18 +17,14 @@ export default {
   data() {
     return {
       Languages: [
-        {name: "HTML5", img: 'html.svg'},
-        {name: "CSS/Sass", img: 'css.svg'},
-        {name: "JavaScript ES6", img: 'javascript.svg'},
-        {name: "Vue.js", img: 'vuejs.svg'},
-        {name: "Django", img: 'django.svg'},
-        {name: "Django Rest Framework", img: 'django-rest-framework.svg'},
+        {name: "HTML5", img: 'html.svg', star: 4},
+        {name: "CSS/Sass", img: 'css.svg', star: 4},
+        {name: "JavaScript ES6", img: 'javascript.svg', star: 4},
+        {name: "Vue.js", img: 'vuejs.svg', star: 3},
+        {name: "Django", img: 'django.svg', star: 2},
+        {name: "Django Rest Framework", img: 'django-rest-framework.png', star: 2},
       ]
     }
   }
 }
 </script>
-
-<style>
-
-</style>

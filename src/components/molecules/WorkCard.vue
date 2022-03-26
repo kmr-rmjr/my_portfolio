@@ -5,7 +5,8 @@
         class="mx-auto mb-4"
         contain
         max-width="500"
-        :src="require('@/assets/img/' + imgFile)"
+        :src="require(`@/assets/img/${imgFile}`)"
+        :lazy-src="require(`@/assets/img/${imgFile}`)"
       ></v-img>
       <h5 class="text-center text-h6 text-lg-subtitle-1 font-weight-bold mb-2">{{productName}}</h5>
       <v-row justify="center" class="mb-9">
@@ -63,7 +64,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>
