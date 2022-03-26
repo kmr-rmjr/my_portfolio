@@ -1,24 +1,26 @@
-# portfolio
+# Kaito Kimura's Portfolio
+https://kaito-kimura.web.app/
 
-## Project setup
+# Stack
+- Vue.js
+- Vuetify
+- Fiebase Hosting
+
+# Usage
+Clone it.
+```
+git clone git@github.com:kmrmjr/my_portfolio.git
+```
+
+Install dependences.
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+Start server on `localhost:8080` and enjoy.
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Auther
+- Kaito Kimura
+- setoengr@gmail.com
